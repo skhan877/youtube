@@ -8,7 +8,7 @@ with open(creds, "r") as f:
 youtube = build("youtube", "v3", developerKey=api_key)
 request = youtube.channels().list(
     part="statistics",
-    forUsername="BBC"
+    forUsername="vaush"
 )
 
 response = request.execute() 
